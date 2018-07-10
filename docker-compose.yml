@@ -1,0 +1,13 @@
+version: "3"
+services:
+
+  tsql2017:
+    container_name: tsql_git
+    image: microsoft/mssql-server-linux:latest
+    ports:
+      - '1433:1433'
+    # volumes:
+      # - ./SQLMain:/var/opt/mssql
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: str0ngPassw0rd
