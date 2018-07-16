@@ -1,6 +1,6 @@
 USE [tsqlGit]
 GO
-/****** Object:  StoredProcedure [util].[writeToFile]    Script Date: 7/16/2018 11:22:37 AM ******/
+/****** Object:  StoredProcedure [util].[writeToFile]    Script Date: 7/16/2018 12:02:08 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -25,7 +25,7 @@ BEGIN
 		,'OpenTextFile'
 		,@fileId OUT
 		,@file
-		,8
+		,2 -- overwrite file
 		,1
 
 	execute sp_OAMethod @fileId
