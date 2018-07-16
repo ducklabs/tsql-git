@@ -1,6 +1,6 @@
 USE [tsqlGit]
 GO
-/****** Object:  StoredProcedure [git].[initRepo]    Script Date: 7/16/2018 4:09:35 PM ******/
+/****** Object:  StoredProcedure [git].[initRepo]    Script Date: 7/16/2018 4:22:14 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON

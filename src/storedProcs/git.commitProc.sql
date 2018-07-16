@@ -1,6 +1,6 @@
 USE [tsqlGit]
 GO
-/****** Object:  StoredProcedure [git].[commitProc]    Script Date: 7/16/2018 10:17:03 AM ******/
+/****** Object:  StoredProcedure [git].[commitProc]    Script Date: 7/16/2018 4:21:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -89,4 +89,4 @@ BEGIN
 
 END
 
--- exec tsqlgit.git.commitProc 'tsqlGit', 'git', 'initRepo', 'first commit'
+-- exec tsqlgit.git.commitProc 'tsqlGit', 'git', 'initRepo', 'test commit'
