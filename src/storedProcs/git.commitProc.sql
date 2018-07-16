@@ -80,9 +80,11 @@ BEGIN
 	-------------------------------------------------------------
 
 	declare @gitAddAllShell varchar(4000) = concat('cd ', @gitDirectory, ' & git add -A')
+	print 'running: ' + @gitAddAllShell
 	exec xp_cmdshell @gitAddAllShell
 
 	declare @gitCommitShell varchar(4000) = concat('cd ', @gitDirectory, ' & git commit -m "', @message, '"')
+	print 'running: ' + @gitCommitShell
 	exec xp_cmdshell @gitCommitShell
 
 END
